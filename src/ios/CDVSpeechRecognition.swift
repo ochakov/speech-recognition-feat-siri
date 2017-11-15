@@ -19,8 +19,10 @@
         srvc = CDVSpeechRecognitionViewController()
         srvc.delegate = self
         supportedLocaleIdentifiers = Set<String>()
-        srvc.supportedLocales().enumerated().forEach {
-            supportedLocaleIdentifiers.insert($0.element.identifier)
+        if #available(iOS 10.0, *) {
+         srvc.supportedLocales().enumerated().forEach {
+             supportedLocaleIdentifiers.insert($0.element.identifier)
+         }
         }
     }
 
