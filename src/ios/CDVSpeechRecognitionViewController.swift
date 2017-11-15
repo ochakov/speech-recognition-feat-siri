@@ -29,8 +29,6 @@ open class CDVSpeechRecognitionViewController: UIViewController, SFSpeechRecogni
     /** [API Reference] https://developer.apple.com/reference/speech/sfspeechrecognizer
      The Locale setting is based on setting of iOS. 
      */
-    fileprivate let speechRecognizer = SFSpeechRecognizer()!
-    
     fileprivate var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     
     fileprivate var recognitionTask: SFSpeechRecognitionTask?
