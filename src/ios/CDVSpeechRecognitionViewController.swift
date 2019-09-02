@@ -247,7 +247,7 @@ open class CDVSpeechRecognitionViewController: UIViewController, SFSpeechRecogni
         }
     }
 
-    func InterruptEvent() {
+    @objc func InterruptEvent() {
         var ret = ""
         if audioEngine.isRunning {
             audioEngine.stop()
