@@ -26,7 +26,7 @@ class SpeechRecognitionFeatSiri : CDVPlugin, TimeOutDelegate, OnFinalDelegate {
         srvc.supportedLocales().enumerated().forEach {
             supportedLocaleIdentifiers.insert($0.element.identifier)
         }
-        srvc.isEnabled() /** Workaround to initialize plugin before first method call */
+        // srvc.isEnabled() /** Workaround to initialize plugin before first method call */
     }
     
     /** SpeechRecognizer Start/Stop Handler. */
